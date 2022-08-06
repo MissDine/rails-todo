@@ -1,5 +1,9 @@
 {
   "name": "client",
+  "description": "Build scripts for Heroku",
+  "engines": {
+    "node": ">= 14"
+  },
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3000",
@@ -18,8 +22,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "clean": "rm -rf public",
     "start": "PORT=4000 react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "npm run clean && npm run build && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
