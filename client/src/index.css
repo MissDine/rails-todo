@@ -1,0 +1,229 @@
+html {
+    /* background: url("/ye.avif") no-repeat center center fixed; */
+    background-color: #F4773A;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 5pc 15pc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.App {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 50px;
+}
+.wraper{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 8px;
+   
+}
+.app{
+    background-color: whitesmoke;
+    width: 1000px;
+}
+main{
+    background-color: #F4773A;
+}
+.App .title {
+    font-size: 3rem;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+    align-self: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+label{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+body {
+    background-color: #F4773A;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2pc 25pc;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.hed{
+    color: black;
+}
+
+.g-btn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.g-btn>div,
+.g-btn>div>svg {
+    width: 40px;
+    height: 38px;
+}
+
+.mp-4 box {
+    margin-top: 10px;
+}
+.main {
+    text-align: center;
+    justify-content: center;
+    display: flex; 
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #e1e3eb;
+  }
+  .sub-main {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    width: 35%;
+    box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
+    padding-top: 30px;
+    border-radius: 60px; 
+    background-color: white;
+  }
+.imgs {
+      padding-top: 20px;
+      justify-content: center;
+      display: flex;
+    
+}
+.container-image {
+    background-color: rgb(223, 221, 221); 
+    border-radius: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 115px;
+    width: 115px;
+}
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+} 
+
+
+  .email{
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      padding: 14px 0 0 25px;
+  }
+
+  .name{
+      padding-left: 70px;
+      font-size: 20px;
+  }
+  .second-input{
+      padding-top: 20px;
+  }
+
+  button{
+      width: 150px;
+      height: 50px;
+      border-radius: 20px;
+      background-color: #4C4C4B;
+      color: white;
+      font-size: 25px;
+      border: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+.login-button{
+      padding-top: 25px;
+}
+
+.link{
+      font-size: 25px;
+      font-weight: 400;
+}
+a{
+       color: #4C4C4B;
+ }
+ .for{
+    background-color: #e1e3eb;
+    background-position: center;
+    height: 100vh;
+ }
+ input{
+    width: 600px;
+    height: 35px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #4C4C4B;
+}
+textarea{
+    height: 55px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.links {
+
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    padding-top: 20px;
+    /* padding-right: 10%; */
+    padding-left: 40%;
+}
+.hee{
+    display: flex;
+    align-items: center;
+}
+.he{
+    color: black;
+    /* font-size: 1px; */
+}
+.lin{
+    justify-content: right;
+}
+.link{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+.link:hover{
+    color: #Ef8D01;
+    transition: .3s;
+
+}
+placeholder{
+    color: black;
+}
+.lan{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.wel{
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: normal;
+}

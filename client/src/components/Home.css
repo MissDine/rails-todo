@@ -1,0 +1,188 @@
+.todo {
+    align-self: center;
+    color: white;
+}
+
+.todo .crossText {
+    text-decoration: line-through;
+    color: #F4773A;
+}
+
+.todo input {
+    background: transparent;
+    border: none;
+    color: black;
+    border-bottom: 0px dashed white;
+    min-width: 300px;
+    margin-top: 40px;
+    /* margin-left: 10px; */
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.todo input::placeholder {
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+
+.todo input:focus {
+    outline: none;
+    border: 2px dotted white;
+}
+
+.todo .add-btn {
+    margin-top: 5px;
+    /* float: right; */
+    padding: 4px 10px 4px 10px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+.todo ul {
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.todo ul li {
+    list-style: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: white;
+    font-family: "Permanent Marker", cursive;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.todo ul li .delete {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.todo ul li .completed {
+    margin-top: 5px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.list {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.edit {
+    margin-top: 5px;
+    /* float: right; */
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.dele {
+    margin-top: 5px;
+    /* float: right; */
+    padding: 4px 10px 4px 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.sub {
+    margin-top: 5px;
+    /* float: right; */
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #4C4C4B;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    /* opacity: 0.5; */
+}
+
+
+
+
+.sele {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    /* opacity: 1; */
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color: white;
+}
+
+ul {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.opti {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #4C4C4B;
+}
