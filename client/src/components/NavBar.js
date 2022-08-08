@@ -11,21 +11,23 @@ function NavBar({ user, setUser }) {
   }
 
   return (
-    <div>
-      <div className="lin"> 
-      <div className="links">
-      <div className="hee">
-      <h1 className="he">Tu Jipange</h1>
-      </div> 
-      <Link className="link" to='/login'>Log In</Link>
-      <Link className="link" to='/signup'>Sign Up</Link>
-      <Link className='link' to="/home">Home</Link>
-      <Link className='link' to="/list">List</Link>
+    <div className="pt-10">
+      <div className="links flex justify-around">
+        <div className="">
+          <h1 className="text-black">Tu Jipange</h1>
+        </div> 
+        {!user ? (<div className="flex ">
+          <Link className="mr-5 text-lg" to='/login'>Log In</Link>
+          <Link className="mr-5 text-lg" to='/signup'>Sign Up</Link>
+        </div>) :
+        (<div>
+          <Link className='mr-5 text-lg' to="/home">Home</Link>
+          <Link className='mr-5 text-lg' to="/lists">List</Link>
+          <button variant="outline" onClick={handleLogoutClick}>
+            Logout
+          </button>
+        </div>)}
       </div>
-        {/* <button variant="outline" onClick={handleLogoutClick}>
-          Logout
-        </button> */}
-    </div>
     </div>
   );
 }

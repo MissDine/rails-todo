@@ -1,62 +1,36 @@
-import React, { Component } from 'react';
-import axios from 'axios'
-import { Routes, Route } from 'react-router-dom'
+import React, { useEffect } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import List from './pages/List';
 import Landing from './pages/Landing';
+import NavBar from './components/NavBar';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoggedIn: false,
-      user: {}
-    };
-  }
-  componentDidMount() {
-    this.loginStatus()
-  }
-  loginStatus = () => {
-    axios.get('/logged-in',
-      { withCredentials: true })
-      .then(response => {
-        console.log(response.data);
-        if (response.data.logged_in) {
-          this.handleLogin(response)
-        } else {
-          this.handleLogout()
-        }
-      })
+function App () {
+  const [user, setUser] = React.useState(null)
+  const navigate = useNavigate()
 
-      // .catch(error => console.log('api errors:', error)
-  }
-  handleLogin = (data) => {
-    this.setState({
-      isLoggedIn: true,
-      user: data.user
+  useEffect(() => {
+    fetch('/me').then(r => {
+      if(r.ok) {
+        r.json().then(user => setUser(user))
+        navigate('/home')
+      }
     })
-  }
-  handleLogout = () => {
-    this.setState({
-      isLoggedIn: false,
-      user: {}
-    })
-  }
-
-  render() {
+  }, [navigate])
+  if(!user) return <Login onLogin={setUser} />
     return (
       <div className='app'>
+        <NavBar user={user} setUser={setUser}/>
           <Routes>
             <Route  path='/' element={<Landing/>} />
-            <Route  path='/home' element={<Home/>} />
+            <Route  path='/home' element={<Home user={user}/>} />
             <Route  path='/login' element={<Login/> } />
-            <Route path='/signup' element={ <Signup handleLogin={this.handleLogin}/>} />
-            <Route path='/lists' element={<List/>} />
+            <Route path='/signup' element={ <Signup/>} />
+            <Route path='/lists' element={<List user={user}/>} />
           </Routes>
       </div>
     );
-  }
 }
 export default App;
